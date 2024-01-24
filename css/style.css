@@ -1,0 +1,30 @@
+/* @font-face {
+    font-family: 'Assistant';
+    src: url('BebasNeue-webfont.eot');
+    src: url('BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('BebasNeue-webfont.woff') format('woff'),
+         url('BebasNeue-webfont.ttf') format('truetype'),
+         url('BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    color:#666;
+    background:#fff;
+    margin:0;
+    padding:0;
+
+}
+
+#navbar ul {
+    padding:0;
+    list-style:none;
+}
+
+#navbar li {
+    display:inline;
+    padding:0 10px 0 10px;
+}
