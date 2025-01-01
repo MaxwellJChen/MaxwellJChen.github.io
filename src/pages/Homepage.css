@@ -1,0 +1,27 @@
+#homepage-text-container {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 5;
+
+    width: 100vw;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#homepage-header {
+    font-size: 60px;
+}
+
+#homepage-subheader {
+    font-size: 30px;
+}
+
+#homepage-canvas-container {
+    position: relative;
+    height: 100vh;
+}
