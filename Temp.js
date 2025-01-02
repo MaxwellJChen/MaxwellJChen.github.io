@@ -30,11 +30,6 @@ function Temp() {
                         Physics 1, Physics 2, US History, Biology, Computer Science A</li>
                 </ul>
             </section>
-
-            <section>
-                <h1>Projects</h1>
-                <h2>Metrics</h2>
-            </section>
         </div>
     );
 }
