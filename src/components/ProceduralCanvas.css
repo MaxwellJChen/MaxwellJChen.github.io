@@ -1,0 +1,9 @@
+#gradient {
+    background: linear-gradient(white, rgba(0, 0, 0, 0));
+
+    height: 15vh;
+    margin-top: -15vh;
+    transform: rotate(180deg);
+
+    z-index: 5;
+}

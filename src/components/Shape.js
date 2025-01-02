@@ -3,17 +3,17 @@ import { useRef } from 'react';
 
 function getGeometry(geometry, dims) {
     switch(geometry) {
-        case 'box':
-            return (<boxGeometry args={dims} />)
         case 'sphere':
-            return (<sphereGeometry args={dims} />)
+            return (<sphereGeometry args={dims} />);
         case 'torus':
-            return (<torusGeometry args={dims} />)
+            return (<torusGeometry args={dims} />);
         case 'tetrahedron':
-            return (<tetrahedronGeometry args={dims} />)
+            return (<tetrahedronGeometry args={dims} />);
         case 'icosahedron':
-            return (<icosahedronGeometry args={dims} />)
-    }
+            return (<icosahedronGeometry args={dims} />);
+        default:
+            return (<boxGeometry args={dims} />);
+    };
 }
 
 function Shape({ configs }) {
