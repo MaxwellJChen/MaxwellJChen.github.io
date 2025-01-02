@@ -29,36 +29,36 @@ function sampleShape(counts, shapes) {
     let randomNumber = Math.floor(Math.random() * 5);
     switch(randomNumber) {
         case 1:
-            configs = {geometry: 'sphere', dims: [Math.random() * 0.3 + 0.15, 32, 32]};
+            configs = {geometry: 'sphere', dims: [Math.random() * 0.075 + 0.09, 32, 16]};
             break;
         case 2:
-            let inner = Math.random() * 0.1 + 0.2;
-            configs = {geometry: 'torus', dims: [inner, Math.random() * 0.05 + inner * 0.3, 32, 32]};
+            let inner = Math.random() * 0.065 + 0.065;
+            configs = {geometry: 'torus', dims: [inner, Math.random() * 0.015 + inner * 0.3, 32, 16]};
             break;
         case 3:
-            configs = {geometry: 'tetrahedron', dims: [Math.random() * 0.25 + 0.45]};
+            configs = {geometry: 'tetrahedron', dims: [Math.random() * 0.075 + 0.11]};
             break;
         case 4:
-            configs = {geometry: 'icosahedron', dims: [Math.random() * 0.25 + 0.35]};
+            configs = {geometry: 'icosahedron', dims: [Math.random() * 0.09 + 0.1]};
             break;
         default:
-            let dim = Math.random() * 0.25 + 0.5;
+            let dim = Math.random() * 0.1 + 0.13;
             configs = {geometry: 'box', dims: [dim, dim, dim]};
     };
 
     configs.wireframe = Math.random() < 0.5;
     configs.rotations = Array(3).fill().map(() => Math.random() * 3);
     configs.rotations[Math.floor(Math.random() * 3)] = 0;
-    configs.speed = 0.005;
+    configs.speed = 0.002;
     if(shapes.length === 0)
-        configs.position = [Math.random() * 6 - 3, 3, 0];
+        configs.position = [Math.random() * 1.5 - 0.75, 3, 0];
     else {
         let prev = shapes[shapes.length - 1].props.configs.position[0];
         if(prev > 0) {
-            configs.position = [Math.random() * (prev + 2) - 3, 3, 0];
+            configs.position = [Math.random() * (prev + 0.75 - 0.2) - 0.75, 3, 0];
         }
         else {
-            configs.position = [Math.random() * (2 - prev) + prev + 1, 3, 0];
+            configs.position = [Math.random() * (0.75 - prev - 0.2) + prev + 0.2, 3, 0];
         }
     }
     
@@ -106,8 +106,8 @@ function ProceduralCanvas() {
     }, 500);
 
     return (
-        <div style={{'width': '100vw', 'height': '100vh'}}>
-            <Canvas camera={{ fov: 15, near: 0.1, far: 1000, position: [0, 0, 15] }}>
+        <div style={{'width': '100vw', 'height': '300vh'}}>
+            <Canvas camera={{ fov: 15, near: 0.1, far: 1000, position: [0, 0, 15] }} dpr={window.devicePixelRatio / 2}>
                 <ambientLight intensity={1.5} />
                 <directionalLight position={[2, 2, 2]} castShadow={true} intensity={Math.PI * 2} />
                 {shapes}

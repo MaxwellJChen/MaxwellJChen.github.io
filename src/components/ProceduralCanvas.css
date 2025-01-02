@@ -1,9 +1,13 @@
 #gradient {
-    background: linear-gradient(white, rgba(0, 0, 0, 0));
+    background-color: linear-gradient(white, rgba(0, 0, 0, 0));
 
     height: 15vh;
     margin-top: -15vh;
     transform: rotate(180deg);
 
     z-index: 5;
+}
+
+Canvas {
+    background-color: transparent;
 }

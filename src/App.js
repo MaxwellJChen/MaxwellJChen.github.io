@@ -8,9 +8,9 @@ function App() {
     return (
         <>
             <Navbar />
-            <ProceduralCanvas />
             <Homepage />
             <Section />
+            <ProceduralCanvas />
         </>
     );
 }
