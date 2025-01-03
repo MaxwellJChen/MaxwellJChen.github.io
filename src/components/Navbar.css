@@ -17,3 +17,9 @@
     margin: 2vh;
     padding: 0.5vh;
 }
+
+@media only screen and (max-width: 400px) {
+    .navbar-container {
+        margin: 2vh 0;
+    }
+}

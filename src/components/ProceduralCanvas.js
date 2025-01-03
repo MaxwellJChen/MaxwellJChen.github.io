@@ -23,42 +23,43 @@ function useInterval(callback, delay) {
 }
 
 function sampleShape(counts, shapes) {
-    console.log(shapes);
+    // console.log(shapes);
 
     let configs;
     let randomNumber = Math.floor(Math.random() * 5);
     switch(randomNumber) {
         case 1:
-            configs = {geometry: 'sphere', dims: [Math.random() * 0.075 + 0.09, 32, 16]};
+            configs = {geometry: 'sphere', dims: [Math.random() * 0.3 + 0.15, 32, 32]};
             break;
         case 2:
-            let inner = Math.random() * 0.065 + 0.065;
-            configs = {geometry: 'torus', dims: [inner, Math.random() * 0.015 + inner * 0.3, 32, 16]};
+            let inner = Math.random() * 0.1 + 0.2;
+            configs = {geometry: 'torus', dims: [inner, Math.random() * 0.05 + inner * 0.3, 32, 32]};
             break;
         case 3:
-            configs = {geometry: 'tetrahedron', dims: [Math.random() * 0.075 + 0.11]};
+            configs = {geometry: 'tetrahedron', dims: [Math.random() * 0.25 + 0.45]};
             break;
         case 4:
-            configs = {geometry: 'icosahedron', dims: [Math.random() * 0.09 + 0.1]};
+            configs = {geometry: 'icosahedron', dims: [Math.random() * 0.25 + 0.35]};
             break;
         default:
-            let dim = Math.random() * 0.1 + 0.13;
+            let dim = Math.random() * 0.25 + 0.5;
             configs = {geometry: 'box', dims: [dim, dim, dim]};
     };
 
     configs.wireframe = Math.random() < 0.5;
     configs.rotations = Array(3).fill().map(() => Math.random() * 3);
     configs.rotations[Math.floor(Math.random() * 3)] = 0;
-    configs.speed = 0.002;
+    configs.speed = 0.005;
+    let y = 3;
     if(shapes.length === 0)
-        configs.position = [Math.random() * 1.5 - 0.75, 3, 0];
+        configs.position = [Math.random() * 6 - 3, y, 0];
     else {
         let prev = shapes[shapes.length - 1].props.configs.position[0];
         if(prev > 0) {
-            configs.position = [Math.random() * (prev + 0.75 - 0.2) - 0.75, 3, 0];
+            configs.position = [Math.random() * (prev + 2) - 3, y, 0];
         }
         else {
-            configs.position = [Math.random() * (0.75 - prev - 0.2) + prev + 0.2, 3, 0];
+            configs.position = [Math.random() * (2 - prev) + prev + 1, y, 0];
         }
     }
     
@@ -94,8 +95,8 @@ function ProceduralCanvas() {
     useInterval(() => {
         if(document.visibilityState !== 'visible') return;
 
-        if(shapes.length >= 20)
-            setShapes(shapes.slice(1, 20));
+        if(shapes.length >= 15)
+            setShapes(shapes.slice(1, 15));
     }, 301);
 
     useInterval(() => {
@@ -106,43 +107,15 @@ function ProceduralCanvas() {
     }, 500);
 
     return (
-        <div style={{'width': '100vw', 'height': '300vh'}}>
+        <div id='canvas-container'>
+            <div id='gradient' />
             <Canvas camera={{ fov: 15, near: 0.1, far: 1000, position: [0, 0, 15] }} dpr={window.devicePixelRatio / 2}>
                 <ambientLight intensity={1.5} />
                 <directionalLight position={[2, 2, 2]} castShadow={true} intensity={Math.PI * 2} />
                 {shapes}
             </Canvas>
-            <div id='gradient' />
         </div>
     )
 }
 
 export default ProceduralCanvas;
-
-
-// else {
-//     let xpositions = Array(shapes.length).fill().map((v, i) => shapes[i].props.configs.position[0]);
-//     xpositions.sort();
-//     let maxGap = -1; let gapIdx = -2
-//     for(let i = 0; i < xpositions.length - 1; i++) {
-//         if(xpositions[i + 1] - xpositions[i] > maxGap) {
-//             maxGap = xpositions[i + 1] - xpositions[i];
-//             gapIdx = i;
-//         }
-//     }
-//     if(xpositions[0] + 2.5 > maxGap) {
-//         maxGap = xpositions[0] + 2.5;
-//         gapIdx = -1;
-//     }
-//     if(2.5 - xpositions[xpositions.length - 1] > maxGap) {
-//         maxGap = xpositions[0] + 2.5;
-//         gapIdx = xpositions.length;
-//     }
-
-//     if(gapIdx === -1)
-//         configs.position = [-2.5, 3, 0];
-//     else if(gapIdx === xpositions.length)
-//         configs.position = [2.5, 3, 0];
-//     else
-//         configs.position = [xpositions[gapIdx] + (xpositions[gapIdx + 1] - xpositions[gapIdx]) / 2, 3, 0];
-// }

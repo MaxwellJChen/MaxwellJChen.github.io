@@ -4,13 +4,20 @@
 
     font-family: 'CMU Serif Roman';
     font-size: 17.5px;
+    color: black;
     border: none;
     z-index: 12;
-    padding: 0 2vh 0 2vh;
+    padding: 0 2vh;
     border-radius: 12px;
 }
 
 .navbar-button:hover {
     background-color: rgba(230, 230, 230, 0.7);
     transition: background-color 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 400px) {
+    .navbar-button {
+        padding: 0 1.5vh;
+    }
 }
