@@ -12,7 +12,7 @@ function App() {
                 <Navbar />
                 <Homepage />
                 <About />
-                {/* <Education /> */}
+                <Education />
             </div>
             <ProceduralCanvas />
         </div>

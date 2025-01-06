@@ -1,14 +1,13 @@
 import './Education.css';
-import SectionHeader from './../components/SectionHeader';
 import millburn from './../assets/millburn.png';
 import vanderbilt from './../assets/vanderbilt.svg';
 import northwestern from './../assets/northwestern.svg';
 
 function Education() {
     return (
-        <div className='section-container'>
-            <SectionHeader text={'Education'} />
-            <div className='panel-container'>
+        <div className='education-panel'>
+            <header>Education</header>
+            <div className='carousel'>
                 <div className='panel'>
                     <tr>
                         <td><img src={millburn} alt={'Millburn High School Logo'} style={{'width': '60px'}}/></td>

@@ -95,8 +95,8 @@ function ProceduralCanvas() {
     useInterval(() => {
         if(document.visibilityState !== 'visible') return;
 
-        if(shapes.length >= 15)
-            setShapes(shapes.slice(1, 15));
+        if(shapes.length >= 30)
+            setShapes(shapes.slice(1, 30));
     }, 301);
 
     useInterval(() => {
