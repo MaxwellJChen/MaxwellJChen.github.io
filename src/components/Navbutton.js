@@ -1,9 +1,9 @@
 import './Navbutton.css';
 
-function Navbutton({ label }) {
+function Navbutton({ label, scrollto }) {
     let callback = () => {
         console.log('clicked');
-        window.scrollTo(0, 50);
+        window.scrollTo(scrollto);
     };
 
     return (
