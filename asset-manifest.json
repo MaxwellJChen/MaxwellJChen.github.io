@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.6b3ff7b2.css",
-    "main.js": "/static/js/main.707be83d.js",
+    "main.css": "/static/css/main.df9b1dc1.css",
+    "main.js": "/static/js/main.54f8db4e.js",
     "static/js/488.9561f9b8.chunk.js": "/static/js/488.9561f9b8.chunk.js",
+    "static/media/millburn.png": "/static/media/millburn.2b343f27d079a1fb7215.png",
     "static/media/cmunrm.ttf": "/static/media/cmunrm.8ff5cee913df84291549.ttf",
+    "static/media/vanderbilt.svg": "/static/media/vanderbilt.2eebd82568c5bfde77c9a7d4e645ddab.svg",
+    "static/media/northwestern.svg": "/static/media/northwestern.0692466dae57952247658ca6b4b36878.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.f184c035973fb8b372890092b7d85323.svg",
+    "static/media/github.svg": "/static/media/github.6fa18895f6e6c7772cab7049f7e05f59.svg",
+    "static/media/email.svg": "/static/media/email.de45f4e98131abe974ddd85fa3fd3574.svg",
     "index.html": "/index.html",
-    "main.6b3ff7b2.css.map": "/static/css/main.6b3ff7b2.css.map",
-    "main.707be83d.js.map": "/static/js/main.707be83d.js.map",
+    "main.df9b1dc1.css.map": "/static/css/main.df9b1dc1.css.map",
+    "main.54f8db4e.js.map": "/static/js/main.54f8db4e.js.map",
     "488.9561f9b8.chunk.js.map": "/static/js/488.9561f9b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b3ff7b2.css",
-    "static/js/main.707be83d.js"
+    "static/css/main.df9b1dc1.css",
+    "static/js/main.54f8db4e.js"
   ]
 }
