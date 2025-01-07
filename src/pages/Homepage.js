@@ -1,11 +1,23 @@
 import './Homepage.css';
+import github from './../assets/icons/github.svg';
+import email from './../assets/icons/email.svg';
+import linkedin from './../assets/icons/linkedin.svg';
+import leetcode from './../assets/icons/leetcode.svg';
+import codeforces from './../assets/icons/codeforces.svg';
 
 function Homepage() {
     return (
         <div id='homepage-container'>
             <div id='text-container'>
-                <span style={{'font-size': '85px', 'margin-bottom':'1vh'}}>Maxwell J. Chen</span>
-                <span style={{'font-size': '32px'}}>Developer Portfolio</span>
+                <span style={{'fontSize': '90px'}}>Maxwell J. Chen</span>
+                <div className='logos'>
+                    <a href={'https://github.com/MaxwellJChen'} target={'blank'}><img src={github} alt='GitHub Profile' /></a>
+                    <a href={'https://www.linkedin.com/in/maxwell-chen-001a9031b/'} target={'blank'}><img src={linkedin} alt='LinkedIn Profile' /></a>
+                    <a href={'https://leetcode.com/u/MaxwellJChen/'} target={'blank'}><img src={leetcode} alt='LeetCode Profile' /></a>
+                    <a href={'https://codeforces.com/profile/Polaris1000M'} target={'blank'}><img src={codeforces} alt='CodeForces Profile' /></a>
+                    <a href={'mailto:maxwelljchen1@gmail.com'} target={'blank'}><img src={email} alt='Email' /></a>
+                </div>
+                <span style={{'fontSize': '36px'}}>Developer Portfolio</span>
             </div>
         </div>
     )

@@ -50,7 +50,7 @@ function sampleShape(counts, shapes) {
     configs.rotations = Array(3).fill().map(() => Math.random() * 3);
     configs.rotations[Math.floor(Math.random() * 3)] = 0;
     configs.speed = 0.005;
-    let y = 8;
+    let y = 15;
     if(shapes.length === 0)
         configs.position = [Math.random() * 6 - 3, y, 0];
     else {
@@ -71,6 +71,12 @@ function sampleShape(counts, shapes) {
         0x3c78d8, // dark blue
         0x6d9eeb, // light blue
     ];
+
+    // let colors = [
+    //     0x415a77,
+    //     0x778da9,
+    //     0xe0e1dd
+    // ];
 
     if(shapes.length === 0)
         configs.color = colors[Math.floor(Math.random() * 3)];
@@ -95,8 +101,8 @@ function ProceduralCanvas() {
     useInterval(() => {
         if(document.visibilityState !== 'visible') return;
 
-        if(shapes.length >= 30)
-            setShapes(shapes.slice(1, 30));
+        if(shapes.length >= 50)
+            setShapes(shapes.slice(1, 50));
     }, 301);
 
     useInterval(() => {
@@ -109,7 +115,7 @@ function ProceduralCanvas() {
     return (
         <div id='canvas-container'>
             <div id='gradient' />
-            <Canvas camera={{ fov: 45, near: 0.1, far: 1000, position: [0, 0, 15] }} dpr={window.devicePixelRatio / 2}>
+            <Canvas camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 0, 15] }} dpr={window.devicePixelRatio}>
                 <ambientLight intensity={1.5} />
                 <directionalLight position={[2, 2, 2]} castShadow={true} intensity={Math.PI * 2} />
                 {shapes}

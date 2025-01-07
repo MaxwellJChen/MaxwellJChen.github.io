@@ -1,5 +1,4 @@
 #homepage-container {
-    /* background-color: lightgray; */
     height: 100vh;
     width: 100vw;
     z-index: 10;
@@ -18,4 +17,21 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+.logos {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 2vh;
+
+    img {
+        width: 40px;
+        height: 40px;
+        margin: 0 1vw;
+    }
+
+    img:hover {
+        transition: all 0.2s ease-in-out;
+        filter: invert(48%) sepia(6%) saturate(3%) hue-rotate(23deg) brightness(95%) contrast(81%);
+    }
 }
