@@ -23,7 +23,7 @@ function About() {
                     </div>
                     <div className='panel'>
                         <img src={northwestern} style={{'width': '30px', 'marginRight': '0.6vw'}} alt='Northwestern Seal' />
-                        Sophomore pursuing accelerated Computer Science Master's and Mathematics Bachelor's Degrees.
+                        Sophomore pursuing accelerated Computer Science Master's and Mathematics Bachelor's degrees.
                     </div>
                 </div>
             </div>
