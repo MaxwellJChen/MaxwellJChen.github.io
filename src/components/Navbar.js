@@ -2,13 +2,12 @@ import './Navbar.css';
 import Navbutton from './Navbutton';
 
 function Navbar() {
+    let pageHeight = document.documentElement.clientHeight;
+    let labels = ['Home', 'About', 'Projects', 'Experience', 'Education'];
+    let buttons = labels.map((label, index) => <Navbutton label={label} scrollto={{top: index * pageHeight, left: 0, behavior: 'smooth'}} key={index} />)
     return (
-        <div className='navbar-container'>
-            <Navbutton label={'Home'} scrollto={{top: 0, left: 0, behavior: 'smooth'}} />
-            <Navbutton label={'About'} scrollto={{top: document.documentElement.clientHeight, left: 0, behavior: 'smooth'}} />
-            <Navbutton label={'Projects'} scrollto={{top: 0, left: 0, behavior: 'smooth'}} />
-            <Navbutton label={'Experience'} scrollto={{top: 0, left: 0, behavior: 'smooth'}} />
-            <Navbutton label={'Education'} scrollto={{top: document.documentElement.clientHeight * 2, left: 0, behavior: 'smooth'}} />
+        <div className='navbar panel'>
+            {buttons}
         </div>
     )
 }

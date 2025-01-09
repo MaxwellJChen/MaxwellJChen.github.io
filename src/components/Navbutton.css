@@ -1,4 +1,4 @@
-.navbar-button {
+.navbutton {
     height: 3.5vh;
     background-color: transparent;
 
@@ -7,17 +7,11 @@
     color: black;
     border: none;
     z-index: 12;
-    padding: 0 1.5vw;
+    padding: 0 1.25vw;
     border-radius: 12px;
 }
 
-.navbar-button:hover {
+.navbutton:hover {
     background-color: rgba(230, 230, 230, 0.5);
     transition: background-color 0.2s ease-in-out;
-}
-
-@media only screen and (max-width: 400px) {
-    .navbar-button {
-        padding: 0 1.5vh;
-    }
 }

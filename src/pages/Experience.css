@@ -1,0 +1,13 @@
+.experience {
+    .panel {
+        width: 60vw;
+        padding: 1.5vh;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vh;
+    }
+
+    img {
+        transform: translateY(-8%);;
+    }
+}

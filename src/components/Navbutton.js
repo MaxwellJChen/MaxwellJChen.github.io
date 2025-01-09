@@ -7,7 +7,7 @@ function Navbutton({ label, scrollto }) {
     };
 
     return (
-        <button className='navbar-button' onClick={callback}>
+        <button className='navbutton' onClick={callback}>
             {label}
         </button>
     )

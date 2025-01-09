@@ -1,13 +1,11 @@
-#canvas-container {
+.canvas {
     position: absolute;
-    top: 0%;
     width: 100vw;
     height: 500vh;
     z-index: -1;
 }
 
-#gradient {
-    position: absolute;
+.gradient {
     background: linear-gradient(transparent, white);
 
     width: 100vw;
