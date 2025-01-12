@@ -2,7 +2,7 @@
 import './About.css';
 import Gradient from './../components/Gradient';
 import Slider from './../components/Slider';
-import target from './../assets/icons/target.jpg';
+import target from './../assets/icons/target.svg';
 import medal from './../assets/icons/medal.svg';
 import northwestern from './../assets/logos/northwestern.svg';
 import column from './../assets/icons/column.svg';
@@ -14,7 +14,9 @@ import pencil from './../assets/icons/pencil.svg';
 function About() {
     return (
         <div className='glass section' id='about'>
-            <Gradient />
+            <Gradient gradient={
+                'linear-gradient(to right top, #d93c3c, #e22660, #df1f87, #cd34b0, #a74fd7, #8071ef, #508afc, #009fff, #00baff, #00cde4, #00d995, #23dd1e)'
+            } rotate={false} />
 
             <div className='container'>
                 <h2>About</h2>
@@ -33,7 +35,7 @@ function About() {
                     <div className='hor'>
                         <div className='glass panel'>
                             <h4>
-                                <img src={medal} style={{'width': '50px', 'marginLeft': '-0.5vw', 'margin-right': '0.5vw'}} alt='Medal' />
+                                <img src={medal} alt='Medal' />
                                 Competitive Programmer
                             </h4>
                         </div>
@@ -44,7 +46,7 @@ function About() {
                     <div className='hor'>
                         <div className='glass panel'>
                             <h4>
-                                <img src={mortar} style={{'width': '40px'}} alt='Northwestern' />
+                                <img src={mortar} alt='Northwestern' />
                                 Sophomore
                             </h4>
                         </div>

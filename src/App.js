@@ -5,7 +5,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
 import Education from './pages/Education';
-// import ProceduralCanvas from './components/ProceduralCanvas';
+import ProceduralCanvas from './components/ProceduralCanvas';
 
 function App() {
     return (

@@ -19,7 +19,7 @@ body {
 
 .section {
     margin: 0 auto 30vh auto;
-    width: 95vw;
+    width: 93vw;
     padding: 20vh 0;
 }
 
@@ -87,12 +87,9 @@ h4 {
 }
 
 .glass {
-    background-color: rgba(253, 253, 253, 0.7);
+    background-color: rgba(253, 253, 253, 0.3);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: white;
-    border-width: 1px;
-    border-style: solid;
 }
 
 ul {

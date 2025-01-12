@@ -1,6 +1,6 @@
 #about {
     position: relative;
-    border-radius: 30px;
+    border-radius: 20px;
 
     .hor .glass {
         white-space: nowrap;
@@ -10,10 +10,10 @@
     img {
         width: 40px;
         transform: translateY(-7%);
-        margin-right: 1vw;
+        margin-right: 0.75vw;
     }
 
     .hor {
-        gap: 0.5vw;
+        gap: 0.75vw;
     }
 }

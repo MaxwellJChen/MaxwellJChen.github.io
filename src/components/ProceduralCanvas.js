@@ -27,14 +27,14 @@ function sampleShape(counts, shapes) {
 
     let configs;
     let randomNumber = Math.floor(Math.random() * 5);
-    let defRand = 0.2, defSize = 0.2;
+    let defRand = 0.1, defSize = 0.3;
     switch(randomNumber) {
         case 1:
-            configs = {geometry: 'sphere', dims: [Math.random() * defRand + defSize, 32, 32]};
+            configs = {geometry: 'sphere', dims: [Math.random() * defRand + defSize * 1.25, 32, 32]};
             break;
         case 2:
-            let inner = Math.random() * defRand * 0.5 + defSize * 0.75;
-            configs = {geometry: 'torus', dims: [inner, Math.random() * defRand / 2 + inner * 0.2, 32, 32]};
+            let inner = Math.random() * (defRand + 0.3) * 0.2 + defSize;
+            configs = {geometry: 'torus', dims: [inner, Math.random() * defRand / 2 + inner * 0.3, 32, 32]};
             break;
         case 3:
             configs = {geometry: 'tetrahedron', dims: [Math.random() * defRand + defSize * 2]};
@@ -50,20 +50,21 @@ function sampleShape(counts, shapes) {
     configs.wireframe = Math.random() < 0.5;
     configs.rotations = Array(3).fill().map(() => Math.random() * 3);
     configs.rotations[Math.floor(Math.random() * 3)] = 0;
-    configs.speed = 0.03;
-    let y = 3;
+    configs.speed = 0.01;
+    let y = 4;
+    let z = 0;
 
     let width = 2.5;
-    let buf = 0.2;
+    let buf = 1.5;
     if(shapes.length === 0)
-        configs.position = [Math.random() * 2 * width - width, y, 0];
+        configs.position = [-width, y, z];
     else {
         let prev = shapes[shapes.length - 1].props.configs.position[0];
         if(prev > 0) {
-            configs.position = [Math.random() * (prev + width - buf) - width, y, 0];
+            configs.position = [Math.random(prev + width - buf) - width, y, z];
         }
         else {
-            configs.position = [Math.random() * (width - prev + buf) + prev, y, 0];
+            configs.position = [Math.random(width - prev - buf) + prev + buf, y, z];
         }
     }
     

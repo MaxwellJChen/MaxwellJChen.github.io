@@ -1,42 +1,43 @@
 .gradient {
     position: absolute;
     top: 0%;
-    height: 50vh;
+    height: 100%;
     width: 100%;
+    background-color: white;
+    opacity: 10%;
+    border-radius: 20px;
+}
+
+.gradient-background {
+    position: absolute;
+    border-radius: 20px;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: screen;
+}
+
+.gradient1, .gradient2, .gradient3, .gradient4 {
+    position: absolute;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    background-size: 145% 125%;
+    background-position: top 0% left 50%;
+    background-image: radial-gradient(ellipse at bottom, white 50%, black 70%);
 }
 
 .gradient1 {
-    position: absolute;
-    
     height: 20vh;
-    width: 100%;
-    
-    border-radius: 20px 20px 0px 0px;
-    background-image:  radial-gradient(ellipse at bottom, transparent 50%, rgba(0, 0, 0, 0.5));
-    background-size: 145% 125%;
-    background-position: top 0% left 50%;
 }
 
 .gradient2 {
-    position: absolute;
-    
     height: 35vh;
-    width: 100%;
-    
-    border-radius: 20px 20px 0px 0px;
-    background-image:  radial-gradient(ellipse at bottom, transparent 50%, rgba(0, 0, 0, 0.5));
-    background-size: 145% 125%;
-    background-position: top 0% left 50%;
 }
 
 .gradient3 {
-    position: absolute;
-    
     height: 50vh;
-    width: 100%;
-    
-    border-radius: 20px 20px 0px 0px;
-    background-image:  radial-gradient(ellipse at bottom, transparent 50%, rgba(0, 0, 0, 0.5));
-    background-size: 145% 125%;
-    background-position: top 0% left 50%;
+}
+
+.gradient4 {
+    height: 65vh;
 }
