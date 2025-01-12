@@ -1,5 +1,5 @@
 .experience {
-    .panel {
+    .glass {
         width: 66vw;
         padding: 1.5vh;
         display: flex;
@@ -9,5 +9,9 @@
 
     img {
         transform: translateY(-8%);;
+    }
+
+    .hor {
+        justify-content: space-between;
     }
 }

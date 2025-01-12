@@ -1,17 +1,6 @@
-.canvas {
-    position: absolute;
+#canvas {
+    position: fixed;
     width: 100vw;
-    height: 500vh;
+    height: 100vh;
     z-index: -1;
-}
-
-.gradient {
-    background: linear-gradient(transparent, white);
-
-    width: 100vw;
-    height: 15vh;
-    top: 100%;
-    margin-top: -15vh;
-
-    z-index: 5;
 }

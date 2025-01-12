@@ -3,16 +3,12 @@
     left: 50%;
     transform: translateX(-50%);
     top: 2vh;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-
     z-index: 20;
-}
 
-@media only screen and (max-width: 400px) {
-    .navbar-container {
-        margin: 2vh 0;
+    .glass {
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        padding: 0.6vh;
     }
 }

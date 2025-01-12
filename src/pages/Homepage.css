@@ -1,16 +1,39 @@
-.logos {
-    text-align: center;
-    padding: 0;
-    margin-bottom: 2vh;
+#homepage {
+    .container {
+        gap: 3vh;
+    }
+
+    h1 {
+        font-size: 140px;
+        margin-bottom: -5vh;
+    }
+
+    h2 {
+        font-size: 122px;
+        margin-bottom: 2vh;
+    }
+}
+
+#logos {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
 
     img {
-        width: 40px;
-        height: 40px;
+        width: 70px;
+        height: 70px;
         margin: 0 1vw;
+        transition: scale 0.5s, transform 0.5s, filter 0.25s ease;
+        filter: brightness(0%);
     }
 
     img:hover {
-        transition: all 0.2s ease-in-out;
-        filter: invert(48%) sepia(6%) saturate(3%) hue-rotate(23deg) brightness(130%) contrast(81%);
+        scale: 1.2;
+        transform: translateY(-15%);
+        filter: brightness(100%);
+    }
+
+    #chess {
+        margin: 0.10vw;
     }
 }

@@ -1,7 +1,11 @@
 .education {
-    .panel {
+    .glass {
         width: 60vw;
         padding: 1.5vh;
+    }
+
+    .hor {
+        justify-content: space-between;
     }
 
     li + li {

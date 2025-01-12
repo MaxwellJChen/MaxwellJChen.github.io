@@ -1,17 +1,18 @@
 .navbutton {
-    height: 3.5vh;
+    height: fit-content;
     background-color: transparent;
 
     font-family: 'CMU Serif Roman';
-    font-size: 20px;
+    font-size: 23px;
+    font-weight: 550;
     color: black;
     border: none;
     z-index: 12;
-    padding: 0 1.25vw;
-    border-radius: 12px;
+    padding: 0.25vh 1vw;
+    border-radius: 15px;
+    transition: 0.2s ease;
 }
 
 .navbutton:hover {
-    background-color: rgba(230, 230, 230, 0.5);
-    transition: background-color 0.2s ease-in-out;
+    background-color: rgba(220, 220, 220, 0.5);
 }

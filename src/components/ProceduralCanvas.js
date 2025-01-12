@@ -27,7 +27,7 @@ function sampleShape(counts, shapes) {
 
     let configs;
     let randomNumber = Math.floor(Math.random() * 5);
-    let defRand = 0.05, defSize = 0.05;
+    let defRand = 0.2, defSize = 0.2;
     switch(randomNumber) {
         case 1:
             configs = {geometry: 'sphere', dims: [Math.random() * defRand + defSize, 32, 32]};
@@ -50,11 +50,11 @@ function sampleShape(counts, shapes) {
     configs.wireframe = Math.random() < 0.5;
     configs.rotations = Array(3).fill().map(() => Math.random() * 3);
     configs.rotations[Math.floor(Math.random() * 3)] = 0;
-    configs.speed = 0.003;
-    let y = 2.5;
+    configs.speed = 0.03;
+    let y = 3;
 
-    let width = 0.5;
-    let buf = 0.05;
+    let width = 2.5;
+    let buf = 0.2;
     if(shapes.length === 0)
         configs.position = [Math.random() * 2 * width - width, y, 0];
     else {
@@ -105,8 +105,8 @@ function ProceduralCanvas() {
     useInterval(() => {
         if(document.visibilityState !== 'visible') return;
 
-        if(shapes.length >= 75)
-            setShapes(shapes.slice(1, 75));
+        if(shapes.length >= 20)
+            setShapes(shapes.slice(1, 20));
     }, 301);
 
     useInterval(() => {
@@ -117,8 +117,7 @@ function ProceduralCanvas() {
     }, 500);
 
     return (
-        <div className='canvas'>
-            <div className='gradient' />
+        <div id='canvas'>
             <Canvas camera={{ fov: 15, near: 0.1, far: 1000, position: [0, 0, 15] }} dpr={window.devicePixelRatio}>
                 <ambientLight intensity={1.5} />
                 <directionalLight position={[2, 2, 2]} castShadow={true} intensity={Math.PI * 2} />

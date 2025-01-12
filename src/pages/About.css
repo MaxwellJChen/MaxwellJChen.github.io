@@ -1,10 +1,19 @@
-.about {
-    .panel {
+#about {
+    position: relative;
+    border-radius: 30px;
+
+    .hor .glass {
         white-space: nowrap;
         padding: 1vh 0.75vw;
     }
 
     img {
+        width: 40px;
         transform: translateY(-7%);
+        margin-right: 1vw;
+    }
+
+    .hor {
+        gap: 0.5vw;
     }
 }

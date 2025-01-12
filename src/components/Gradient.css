@@ -1,0 +1,42 @@
+.gradient {
+    position: absolute;
+    top: 0%;
+    height: 50vh;
+    width: 100%;
+}
+
+.gradient1 {
+    position: absolute;
+    
+    height: 20vh;
+    width: 100%;
+    
+    border-radius: 20px 20px 0px 0px;
+    background-image:  radial-gradient(ellipse at bottom, transparent 50%, rgba(0, 0, 0, 0.5));
+    background-size: 145% 125%;
+    background-position: top 0% left 50%;
+}
+
+.gradient2 {
+    position: absolute;
+    
+    height: 35vh;
+    width: 100%;
+    
+    border-radius: 20px 20px 0px 0px;
+    background-image:  radial-gradient(ellipse at bottom, transparent 50%, rgba(0, 0, 0, 0.5));
+    background-size: 145% 125%;
+    background-position: top 0% left 50%;
+}
+
+.gradient3 {
+    position: absolute;
+    
+    height: 50vh;
+    width: 100%;
+    
+    border-radius: 20px 20px 0px 0px;
+    background-image:  radial-gradient(ellipse at bottom, transparent 50%, rgba(0, 0, 0, 0.5));
+    background-size: 145% 125%;
+    background-position: top 0% left 50%;
+}

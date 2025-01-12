@@ -1,16 +1,16 @@
 import './Education.css';
 import millburn from './../assets/logos/millburn.png';
-import vanderbilt from './../assets/logos/vanderbilt_seal.svg';
+import vanderbilt from './../assets/logos/vanderbilt.svg';
 import northwestern from './../assets/logos/northwestern.svg';
 
 function Education() {
     return (
         <div className='education page'>
             <div className='container'>
-                <header>Education</header>
+                <h1>Education</h1>
                 <div className='vert'>
 
-                    <div className='panel'>
+                    <div className='glass'>
                         <div className='hor label'>
                             <div>
                                 <img src={northwestern} alt={'Northwestern University Seal'} style={{'width': '40px'}} />
@@ -29,7 +29,7 @@ function Education() {
                         </ul>
                     </div>
 
-                    <div className='panel'>
+                    <div className='glass'>
                         <div className='hor label'>
                             <div>
                                 <img src={vanderbilt} alt={'Vanderbilt University Seal'} style={{'width': '40px'}} />
@@ -44,7 +44,7 @@ function Education() {
                         </ul>
                     </div>
 
-                    <div className='panel'>
+                    <div className='glass'>
                         <div className='hor label'>
                             <div>
                                 <img src={millburn} alt={'Millburn High School Logo'} style={{'width': '50px'}}/>
