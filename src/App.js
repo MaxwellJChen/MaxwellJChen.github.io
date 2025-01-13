@@ -10,7 +10,7 @@ import ProceduralCanvas from './components/ProceduralCanvas';
 function App() {
     return (
         <div className='app'>
-            <ProceduralCanvas />
+            {/* <ProceduralCanvas /> */}
             <Navbar />
             <Homepage />
             <About />

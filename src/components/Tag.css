@@ -1,0 +1,16 @@
+.tag {
+    font-size: 20px;
+    padding: 0.5vh 1vw;
+    border-radius: 17px;
+    color: white;
+    font-weight: 600;
+    /* background-color: rgba(0, 82, 215, 1); */
+    background-color: rgb(80, 80, 80);
+    transition: 0.5s;
+}
+
+.tag:hover {
+    scale: 1.1;
+    background-color: gray;
+    /* background-color: rgb(0, 129, 215); */
+}

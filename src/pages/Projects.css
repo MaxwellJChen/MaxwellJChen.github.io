@@ -1,77 +1,54 @@
 #projects {
-    max-width: 80vw;
     font-size: 25px;
 
-    h2 {
-        margin-bottom: 3vh;
-    }
-
-    h4 {
-        font-size: 30px;
+    img {
+        height: 45px;
     }
 
     .project {
-        position: relative;
-        margin-bottom: 10vh;
-        padding: 2vh;
+        width: 75vw;
+        margin: auto;
     }
 
-    .vert {
-        position: relative;
-        gap: 1vh;
+    .project + .project {
+        margin-top: 15vh;
     }
 
-    img {
-        height: 40px;
+    .project-links {
         margin: 0 auto 0 0;
-    }
-
-    span {
-        padding: 0 0.25vw;
-    }
-
-
-    .links {
-        display: flex;
-        flex-direction: row;
-
-        #link {
-            width: 30px;
-        }
 
         .hor {
-            gap: 1.5vw;
-            align-items: center;
-            margin: auto;
+            gap: 2vw;
         }
 
         img {
-            margin: 0;
+            transition: 0.5s ease;
         }
 
-        a {
-            transition: all 0.5s ease;
-        }
-    
-        a:hover {
+        img:hover {
             scale: 1.2;
+            transform: translateY(-17%);
         }
     }
 
-    .images {
-        text-align: center;
-        position: relative;
-        
+    .project-title {
+        .panel {
+            padding: 1.25vh;
+        }
+
         img {
-            width: 80%;
+            height: 50px;
+            margin: auto 2vw auto 1vw;
+        }
+
+        h4 {
+            text-align: left;
         }
     }
-}
 
-#stocks, #speech-disfluencies, #surge, #imagined-speech-decoding {
-    position: relative;
-
-    .panel {
-        padding: 1.25vh;
+    .project-tags {
+        .hor {
+            gap: 1vw;
+        }
     }
 }

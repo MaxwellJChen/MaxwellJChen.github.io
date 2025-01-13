@@ -50,7 +50,7 @@ function sampleShape(counts, shapes) {
     configs.wireframe = Math.random() < 0.5;
     configs.rotations = Array(3).fill().map(() => Math.random() * 3);
     configs.rotations[Math.floor(Math.random() * 3)] = 0;
-    configs.speed = 0.01;
+    configs.speed = 0.005;
     let y = 4;
     let z = 0;
 
