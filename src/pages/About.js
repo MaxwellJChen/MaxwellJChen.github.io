@@ -9,7 +9,7 @@ import mortar from './../assets/icons/mortar-hat.svg';
 
 function About() {
     return (
-        <div className='glass section' id='about'>
+        <div className='section' id='about'>
             {/* <Gradient /> */}
             <div className='container'>
                 <h2>About</h2>

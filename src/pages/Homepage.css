@@ -3,6 +3,11 @@
         gap: 3vh;
     }
 
+    .centered {
+        color: white;
+        mix-blend-mode: difference;
+    }
+
     h1 {
         font-size: 140px;
         margin-bottom: -5vh;
@@ -25,6 +30,7 @@
         height: 70px;
         margin: 0 1vw;
         transition: scale 0.5s, transform 0.5s ease;
+        filter: invert(1);
     }
 
     img:hover {

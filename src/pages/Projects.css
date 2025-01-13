@@ -1,5 +1,5 @@
 #projects {
-    max-width: 65vw;
+    max-width: 80vw;
     font-size: 25px;
 
     h2 {
@@ -12,20 +12,13 @@
 
     .project {
         position: relative;
-        margin-bottom: 5vh;
+        margin-bottom: 10vh;
         padding: 2vh;
-    }
-
-    .panel {
-        padding: 1.25vh;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5vh;
     }
 
     .vert {
         position: relative;
-        gap: 2vh;
+        gap: 1vh;
     }
 
     img {
@@ -34,7 +27,7 @@
     }
 
     span {
-        padding: 0 1vw;
+        padding: 0 0.25vw;
     }
 
 
@@ -49,7 +42,6 @@
         .hor {
             gap: 1.5vw;
             align-items: center;
-            width: fit-content;
             margin: auto;
         }
 
@@ -69,6 +61,7 @@
     .images {
         text-align: center;
         position: relative;
+        
         img {
             width: 80%;
         }
@@ -79,6 +72,6 @@
     position: relative;
 
     .panel {
-        padding: 3vh;
+        padding: 1.25vh;
     }
 }
