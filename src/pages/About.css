@@ -2,7 +2,7 @@
     position: relative;
     border-radius: 20px;
 
-    .hor .glass {
+    .glass {
         white-space: nowrap;
         padding: 1vh 0.75vw;
     }

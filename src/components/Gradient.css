@@ -1,10 +1,11 @@
 .gradient {
+    z-index: -1;
     position: absolute;
     top: 0%;
     height: 100%;
     width: 100%;
     background-color: white;
-    opacity: 10%;
+    opacity: 1%;
     border-radius: 20px;
 }
 
