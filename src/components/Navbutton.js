@@ -2,7 +2,7 @@ import './Navbutton.css';
 
 function Navbutton({ label, scrollto }) {
     let callback = () => {
-        console.log('clicked');
+        // console.log('clicked');
         window.scrollTo(scrollto);
     };
 
