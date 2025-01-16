@@ -50,11 +50,10 @@ function Projects() {
 
                         <div className='project-tags'>
                             <div className='hor'>
-                                <Tag content={'Python'}/>
-                                <Tag content={'Data Science'}/>
                                 <Tag content={'PyTorch'}/>
+                                <Tag content={'Python'}/>
+                                <Tag content={'NumPy'}/>
                                 <Tag content={'Pandas'}/>
-                                <Tag content={'Machine Learning'}/>
                             </div>
                         </div>
                     </div>
@@ -95,10 +94,11 @@ function Projects() {
 
                         <div className='project-tags'>
                             <div className='hor'>
+                                <Tag content={'Hugging Face'}/>
                                 <Tag content={'Python'}/>
-                                <Tag content={'Transformers'}/>
+                                <Tag content={'LLMs'}/>
                                 <Tag content={'Agile'}/>
-                                <Tag content={'Project Management'}/>
+                                <Tag content={'Management'}/>
                             </div>
                         </div>
                     </div>
@@ -142,9 +142,9 @@ function Projects() {
                         
                         <div className='project-tags'>
                             <div className='hor'>
+                                <Tag content={'PyTorch'}/>
                                 <Tag content={'Python'}/>
-                                <Tag content={'Reinforcement Learning'}/>
-                                <Tag content={'Graph Neural Networks'}/>
+                                <Tag content={'NumPy'}/>
                                 <Tag content={'Pandas'}/>
                             </div>
                         </div>
@@ -194,10 +194,10 @@ function Projects() {
 
                         <div className='project-tags'>
                             <div className='hor'>
-                                <Tag content={'Python'}/>
                                 <Tag content={'TensorFlow'}/>
-                                <Tag content={'Neural Networks'}/>
-                                <Tag content={'Time-Series Analysis'}/>
+                                <Tag content={'Python'}/>
+                                <Tag content={'NumPy'}/>
+                                <Tag content={'Pandas'}/>
                             </div>
                         </div>
                     </div>
@@ -239,10 +239,9 @@ function Projects() {
 
                         <div className='project-tags'>
                             <div className='hor'>
-                                <Tag content={'Python'}/>
                                 <Tag content={'TensorFlow'}/>
-                                <Tag content={'Computer Vision'}/>
-                                <Tag content={'Deep Learning'}/>
+                                <Tag content={'Python'}/>
+                                <Tag content={'NumPy'}/>
                             </div>
                         </div>
                     </div>
