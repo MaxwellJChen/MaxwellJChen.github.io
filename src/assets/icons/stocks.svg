@@ -1,63 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet" viewBox="3.15 3.2 121.7 121.59">
+<svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="2 1.99 20 20.01">
 
-<path fill="#ffffff" d="M4 4h120v120H4z">
+<title/>
 
-</path>
+<g id="growth">
 
-<g fill="none" stroke="#b0bec5" stroke-width="1.993" stroke-miterlimit="10">
+<path d="M21.5,21H20V9.5a.5.5,0,0,0-.5-.5h-3a.5.5,0,0,0-.5.5V21H14V13.5a.5.5,0,0,0-.5-.5h-3a.5.5,0,0,0-.5.5V21H8V14.5a.5.5,0,0,0-.5-.5h-3a.5.5,0,0,0-.5.5V21H2.5a.5.5,0,0,0,0,1h19a.5.5,0,0,0,0-1ZM7,21H5V15H7Zm6,0H11V14h2Zm6,0H17V10h2Z"/>
 
-<path d="M24.7 4.2v119.6">
-
-</path>
-
-<path d="M44.35 4.2v119.6">
-
-</path>
-
-<path d="M64 4.2v119.6">
-
-</path>
-
-<path d="M83.65 4.2v119.6">
-
-</path>
-
-<path d="M103.3 4.2v119.6">
-
-</path>
+<path d="M2.5,13a.47.47,0,0,0,.35-.15l4.7-4.69L11.2,10.9a.49.49,0,0,0,.65-.05L19,3.71V5.5a.5.5,0,0,0,1,0v-3a.41.41,0,0,0,0-.19A.51.51,0,0,0,19.69,2a.41.41,0,0,0-.19,0h-3a.5.5,0,0,0,0,1h1.79L11.45,9.84,7.8,7.1a.49.49,0,0,0-.65.05l-5,5a.48.48,0,0,0,0,.7A.47.47,0,0,0,2.5,13Z"/>
 
 </g>
-
-<g fill="none" stroke="#b0bec5" stroke-width="2" stroke-miterlimit="10">
-
-<path d="M123.8 24.66H4.15">
-
-</path>
-
-<path d="M123.81 44.33H4.16">
-
-</path>
-
-<path d="M123.83 64H4.17">
-
-</path>
-
-<path d="M123.84 83.67H4.19">
-
-</path>
-
-<path d="M123.85 103.34H4.2">
-
-</path>
-
-</g>
-
-<path fill="#e53935" d="M5.1 122.98l-.08-6.16L31.94 68.3l23.7 21.91l63.78-85.1h3.49l.14 5.16l-66.6 88.86l-23.02-21.28l-24.98 45.16z">
-
-</path>
-
-<path d="M122.01 5.99V122H5.99V5.99h116.02M124 4H4v120h120V4z" fill="#b0bec5">
-
-</path>
 
 </svg>

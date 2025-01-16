@@ -4,13 +4,11 @@
 
     .glass {
         white-space: nowrap;
-        padding: 1vh 0.75vw;
+        padding: 1.25vh 0.75vw;
     }
 
     img {
-        width: 40px;
-        transform: translateY(-7%);
-        margin-right: 0.75vw;
+        width: 35px;
     }
 
     .hor {

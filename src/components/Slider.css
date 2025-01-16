@@ -1,7 +1,6 @@
 .slider-wrapper {
     display: flex;
     flex-direction: row;
-    font-size: 25px;
     max-width: 60vw;
     overflow: hidden;
 }

@@ -12,8 +12,8 @@ function Homepage() {
     return (
         <div className='page' id='homepage'>
             <div className='centered'>
-                <h1>Maxwell J. Chen</h1>
-                <h2>Developer Portfolio</h2>
+                <span id='homepage-title'>Maxwell J. Chen</span>
+                <span id='homepage-sub-title'>Developer Portfolio</span>
                 <div id='logos'>
                     <a href={'https://github.com/MaxwellJChen'} target={'blank'}>
                         <img id='github' src={github} title='GitHub' alt='GitHub Profile' />

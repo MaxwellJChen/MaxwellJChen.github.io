@@ -1,6 +1,18 @@
-#canvas {
+#canvas-container {
     position: fixed;
     width: 100vw;
     height: 100vh;
     z-index: -1;
+}
+
+#canvas {
+    button {
+        position: fixed;
+        top: 95%;
+        left: 95%;
+        width: 3vw;
+        height: 2vh;
+        z-index: 10;
+        visibility: hidden;
+    }
 }

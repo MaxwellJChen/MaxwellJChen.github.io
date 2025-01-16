@@ -1,50 +1,48 @@
 
 import './About.css';
-import Gradient from './../components/Gradient';
 import Slider from './../components/Slider';
-import target from './../assets/icons/target.svg';
-import medal from './../assets/icons/medal.svg';
-import mortar from './../assets/icons/mortar-hat.svg';
+import keyboard from './../assets/icons/keyboard.svg';
+import algorithm from './../assets/icons/algorithm.svg';
+import college from './../assets/icons/college.svg';
 
 
 function About() {
     return (
         <div className='section' id='about'>
-            {/* <Gradient /> */}
             <div className='container'>
-                <h2>About</h2>
+                <h1>About</h1>
                 <div className='vert'>
                     <div className='hor'>
-                        <div className='glass panel'>
-                            <h4 id='software-developer'>
-                                <img src={target} alt='Target Symbol' />
+                        <div className='glass panel hor'>
+                            <img src={keyboard} alt='Target Symbol' />
+                            <h2 id='software-developer'>
                                 Software Developer
-                            </h4>
+                            </h2>
                         </div>
 
-                        <Slider text={'with a focus on code efficiency, clarity, and scalability.'}/>
+                        <Slider content={'with a focus on code efficiency, clarity, and scalability.'}/>
                     </div>
 
                     <div className='hor'>
-                        <div className='glass panel'>
-                            <h4>
-                                <img src={medal} alt='Medal' />
+                        <div className='glass panel hor'>
+                            <img src={algorithm} alt='Medal' />
+                            <h2 id='competitive-programmer'>
                                 Competitive Programmer
-                            </h4>
+                            </h2>
                         </div>
 
-                        <Slider text={'training for ICPC North American Championships.'}/>
+                        <Slider content={'training for ICPC North American Championships.'}/>
                     </div>
 
                     <div className='hor'>
-                        <div className='glass panel'>
-                            <h4>
-                                <img src={mortar} alt='Northwestern' />
-                                Sophomore
-                            </h4>
+                        <div className='glass panel hor'>
+                            <img src={college} alt='Studying Symbol' />
+                            <h2 id='student'>
+                                Student
+                            </h2>
                         </div>
 
-                        <Slider text={'pursuing combined Computer Science Master\'s and Bachelor\'s and Mathematics Bachelor\'s at Northwestern.'}/>
+                        <Slider content={'pursuing combined Computer Science BS/MS program with Mathematics BA at Northwestern.'}/>
                     </div>
                 </div>
             </div>

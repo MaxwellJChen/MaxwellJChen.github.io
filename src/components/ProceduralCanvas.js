@@ -50,7 +50,7 @@ function sampleShape(counts, shapes) {
     configs.wireframe = Math.random() < 0.5;
     configs.rotations = Array(3).fill().map(() => Math.random() * 3);
     configs.rotations[Math.floor(Math.random() * 3)] = 0;
-    configs.speed = 0.005;
+    configs.speed = 0.015;
     let y = 4;
     let z = 0;
 
@@ -102,16 +102,22 @@ function sampleShape(counts, shapes) {
 function ProceduralCanvas() {
     const [shapes, setShapes] = useState([sampleShape(0, [])]);
     const [counts, setCounts] = useState(1);
+    const [useCanvas, setUseCanvas] = useState(true);
 
+    if(!useCanvas && shapes.length > 0) {
+        setShapes([])
+    }
+
+    const shapesLength = 10;
     useInterval(() => {
-        if(document.visibilityState !== 'visible') return;
+        if(document.visibilityState !== 'visible' || !useCanvas) return;
 
-        if(shapes.length >= 20)
-            setShapes(shapes.slice(1, 20));
+        if(shapes.length >= shapesLength)
+            setShapes(shapes.slice(1, shapesLength));
     }, 301);
 
     useInterval(() => {
-        if(document.visibilityState !== 'visible') return;
+        if(document.visibilityState !== 'visible' || !useCanvas) return;
 
         setCounts(counts + 1);
         setShapes([...shapes, sampleShape(counts, shapes)]);
@@ -119,11 +125,19 @@ function ProceduralCanvas() {
 
     return (
         <div id='canvas'>
-            <Canvas camera={{ fov: 15, near: 0.1, far: 1000, position: [0, 0, 15] }} dpr={window.devicePixelRatio}>
-                <ambientLight intensity={1.5} />
-                <directionalLight position={[2, 2, 2]} castShadow={true} intensity={Math.PI * 2} />
-                {shapes}
-            </Canvas>
+            <div id='canvas-container'>
+                {
+                    useCanvas ? <Canvas camera={{ fov: 15, near: 0.1, far: 1000, position: [0, 0, 15] }} dpr={window.devicePixelRatio}>
+                                    <ambientLight intensity={1.5} />
+                                    <directionalLight position={[2, 2, 2]} castShadow={true} intensity={Math.PI * 2} />
+                                    {shapes}
+                                </Canvas>
+                              : <></>
+                }
+            </div>
+            <button onClick={() => {
+                setUseCanvas(!useCanvas)
+            }}/>
         </div>
     )
 }

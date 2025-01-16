@@ -3,15 +3,17 @@
         gap: 3vh;
     }
 
-    h1 {
+    #homepage-title {
         font-size: 140px;
         margin-bottom: -5vh;
         margin-top: -3vh;
+        white-space: nowrap;
     }
 
-    h2 {
+    #homepage-sub-title {
         font-size: 122px;
         margin-bottom: 2vh;
+        white-space: nowrap;
     }
 }
 
@@ -24,12 +26,22 @@
         width: 70px;
         height: 70px;
         margin: 0 1vw;
-        transition: scale 0.5s, transform 0.5s ease;
+        filter: brightness(0);
+        transition: scale 0.5s, transform 0.5s, filter 0.25s ease;
     }
 
     img:hover {
         scale: 1.2;
+        filter: brightness(1);
         transform: translateY(-15%);
+    }
+
+    #document {
+        filter: grayscale(1) brightness(0);
+    }
+
+    #document:hover {
+        filter: grayscale(1) brightness(2.15);
     }
 
     #chess {

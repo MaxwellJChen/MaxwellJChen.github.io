@@ -1,54 +1,91 @@
 #projects {
-    font-size: 25px;
 
-    img {
-        height: 45px;
+    .projects-wrapper {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-wrap: wrap;
+        gap: 3vh;
+        justify-content: center;
+        align-items: start;
+        width: 93vw;
     }
 
     .project {
-        width: 75vw;
-        margin: auto;
+        width: 40vw;
     }
 
-    .project + .project {
-        margin-top: 15vh;
+    .project-container {
+        padding: 2vh;
+        border-radius: 20px;
+        transition: 0.25s;
+        text-align: justify;
+    }
+
+    .project-container:hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        background-color: rgba(253, 253, 253, 1);
     }
 
     .project-links {
         margin: 0 auto 0 0;
 
         .hor {
-            gap: 2vw;
+            gap: 1vw;
+        }
+
+        .project-icon:hover {
+            scale: 1;
         }
 
         img {
             transition: 0.5s ease;
+            filter: brightness(0);
+            height: 35px;
         }
 
         img:hover {
             scale: 1.2;
-            transform: translateY(-17%);
+            filter: brightness(1);
+            /* transform: translateY(-17%); */
+        }
+
+        #sound {
+            width: 35px;
+        }
+
+        #document, #slides, #poster {
+            filter: grayscale(1) brightness(0);
+        }
+    
+        #document:hover {
+            filter: grayscale(1) brightness(2.15);
+        }
+    
+        #slides:hover {
+            filter: grayscale(1) brightness(1.10);
+        }
+    
+        #poster:hover {
+            filter: grayscale(1) brightness(1.10);
         }
     }
 
     .project-title {
         .panel {
-            padding: 1.25vh;
+            width: fit-content;
+            padding: 1vh 0.75vw;
         }
 
-        img {
-            height: 50px;
-            margin: auto 2vw auto 1vw;
-        }
-
-        h4 {
-            text-align: left;
+        h2 {
+            white-space: wrap;
         }
     }
 
     .project-tags {
         .hor {
-            gap: 1vw;
+            gap: 0.75vh 0.75vw;
+            flex-wrap: wrap;
         }
     }
 }

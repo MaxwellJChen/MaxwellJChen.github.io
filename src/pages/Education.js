@@ -1,7 +1,7 @@
 import './Education.css';
-import millburn from './../assets/logos/millburn.png';
-import vanderbilt from './../assets/logos/vanderbilt.svg';
-import northwestern from './../assets/logos/northwestern.svg';
+import millburn from './../assets/logos/millburn_seal.png';
+import vanderbilt from './../assets/logos/vanderbilt_seal.svg';
+import northwestern from './../assets/logos/northwestern_seal.svg';
 
 function Education() {
     return (

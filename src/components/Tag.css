@@ -1,12 +1,13 @@
 .tag {
-    font-size: 20px;
-    padding: 0.5vh 1vw;
-    border-radius: 17px;
+    padding: 0.5vh 0.75vw;
+    border-radius: 16px;
     color: white;
     font-weight: 600;
+    font-size: 17px;
     /* background-color: rgba(0, 82, 215, 1); */
     background-color: rgb(80, 80, 80);
     transition: 0.5s;
+    white-space: nowrap;
 }
 
 .tag:hover {
