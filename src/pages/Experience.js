@@ -1,7 +1,7 @@
 import './Experience.css';
 import dsi from './../assets/logos/dsi.svg';
 import vds from './../assets/logos/vds.jpeg';
-import nexgen from './../assets/logos/nexgen.jpeg';
+import nexgen from './../assets/logos/nexgen.svg';
 import kumon from './../assets/logos/kumon.svg';
 
 function Experience() {

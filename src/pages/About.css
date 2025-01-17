@@ -1,10 +1,17 @@
 #about {
     position: relative;
     border-radius: 20px;
+    margin-top: 20vh;
 
     .glass {
         white-space: nowrap;
         padding: 1.25vh 0.75vw;
+        transition: 0.25s ease;
+    }
+
+    .glass:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        background-color: rgba(253, 253, 253, 1);
     }
 
     img {

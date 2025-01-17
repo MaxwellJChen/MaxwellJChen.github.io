@@ -14,7 +14,7 @@ function About() {
                 <div className='vert'>
                     <div className='hor'>
                         <div className='glass panel hor'>
-                            <img src={keyboard} alt='Target Symbol' />
+                            <img src={keyboard} alt='Keyboard Symbol' />
                             <h2 id='software-developer'>
                                 Software Developer
                             </h2>
@@ -25,7 +25,7 @@ function About() {
 
                     <div className='hor'>
                         <div className='glass panel hor'>
-                            <img src={algorithm} alt='Medal' />
+                            <img src={algorithm} alt='Algorithm Symbol' />
                             <h2 id='competitive-programmer'>
                                 Competitive Programmer
                             </h2>

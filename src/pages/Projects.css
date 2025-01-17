@@ -1,11 +1,14 @@
 #projects {
-
+    h1 {
+        margin-bottom: 3vh;
+    }
+    
     .projects-wrapper {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
         flex-wrap: wrap;
-        gap: 3vh;
+        gap: 3vw 5vw;
         justify-content: center;
         align-items: start;
         width: 93vw;
@@ -18,13 +21,18 @@
     .project-container {
         padding: 2vh;
         border-radius: 20px;
-        transition: 0.25s;
+        transition: 0.25s ease;
         text-align: justify;
+        /* box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); */
     }
 
     .project-container:hover {
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         background-color: rgba(253, 253, 253, 1);
+
+        .project-title .panel {
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+        }
     }
 
     .project-links {
@@ -73,6 +81,7 @@
 
     .project-title {
         .panel {
+            transition: 0.25s ease;
             width: fit-content;
             padding: 1vh 0.75vw;
         }

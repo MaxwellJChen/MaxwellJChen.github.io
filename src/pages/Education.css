@@ -1,15 +1,56 @@
-.education {
-    .glass {
-        width: 60vw;
-        padding: 1.5vh;
+#education {
+    h1 {
+        margin-bottom: 3vh;
     }
 
-    .hor {
+    img {
+        height: 35px;
+        margin-right: 0.5vw;
+    }
+
+    .education-title {
+        padding: 1vh 0.75vw;
+    }
+
+    .education-title.hor {
         justify-content: space-between;
     }
 
+    .vert {
+        gap: 3vh;
+    }
+
+    .school {
+        transition: 0.25s ease;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0);
+        border-radius: 20px;
+        padding: 2vh;
+        width: 65vw;
+        scroll-snap-type: x mandatory;
+    }
+
+    .coursework {
+        gap: 0.75vh 0.75vw;
+        flex-wrap: wrap;
+    }
+
+    .school:hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        background-color: rgba(253, 253, 253, 1);
+    }
+
+    ul {
+        list-style: '❖';
+        margin: 2vh 0 0 0;
+        padding-left: 1.5vw;
+    }
+
+    li {
+        padding-left: 1vw;
+    }
+
     li + li {
-        margin-top: 2vh;
+        margin-top: 0.5vh;
     }
 
     .label {
