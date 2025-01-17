@@ -29,6 +29,10 @@
         scroll-snap-type: x mandatory;
     }
 
+    .education-title {
+        transition: 0.25s ease;
+    }
+
     .coursework {
         gap: 0.75vh 0.75vw;
         flex-wrap: wrap;
@@ -37,6 +41,10 @@
     .school:hover {
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         background-color: rgba(253, 253, 253, 1);
+
+        .panel {
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+        }
     }
 
     ul {
@@ -51,9 +59,5 @@
 
     li + li {
         margin-top: 0.5vh;
-    }
-
-    .label {
-        margin-bottom: 1vh;
     }
 }

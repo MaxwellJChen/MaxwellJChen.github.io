@@ -1,17 +1,73 @@
-.experience {
-    .glass {
-        width: 66vw;
-        padding: 1.5vh;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5vh;
+#experience {
+    h1 {
+        margin-bottom: 3vh;
     }
 
     img {
-        transform: translateY(-8%);;
+        width: 35px;
+        margin-right: 0.5vw;
     }
 
-    .hor {
+    .experience-wrapper {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-wrap: wrap;
+        gap: 2vw 3vw;
+        justify-content: center;
+        align-items: start;
+        width: 93vw;
+    }
+
+    .experience-title {
+        padding: 1vh 0.75vw;
+
+        h2 {
+            margin: auto;
+        }
+    }
+
+    .vert {
+        gap: 3vh;
+    }
+
+    .work {
+        transition: 0.25s ease;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0);
+        border-radius: 20px;
+        padding: 2vh;
+        width: 31vw;
+    }
+
+    .experience-label {
         justify-content: space-between;
+        margin-bottom: 2vh;
+    }
+
+    .experience-title {
+        transition: 0.25s ease;
+    }
+
+    .work:hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        background-color: rgba(253, 253, 253, 1);
+
+        .panel {
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    ul {
+        list-style: '❖';
+        margin: 2vh 0 0 0;
+        padding-left: 1.5vw;
+    }
+
+    li {
+        padding-left: 1vw;
+    }
+
+    li + li {
+        margin-top: 0.5vh;
     }
 }
