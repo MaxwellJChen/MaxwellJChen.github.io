@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.47a6817a.css",
+    "main.css": "/static/css/main.40d5e174.css",
     "main.js": "/static/js/main.fea955a1.js",
     "static/js/488.9561f9b8.chunk.js": "/static/js/488.9561f9b8.chunk.js",
     "static/media/millburn-seal.png": "/static/media/millburn-seal.0e0f0d57e16f6e137cd6.png",
@@ -29,12 +29,12 @@
     "static/media/codeforces.svg": "/static/media/codeforces.6e805390e9dabccb180393c8170ba186.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.b353072b95fc914ff3caadd804af7a01.svg",
     "static/media/gmail.svg": "/static/media/gmail.cf6e9da6207069eaa596237538127bcb.svg",
-    "main.47a6817a.css.map": "/static/css/main.47a6817a.css.map",
+    "main.40d5e174.css.map": "/static/css/main.40d5e174.css.map",
     "main.fea955a1.js.map": "/static/js/main.fea955a1.js.map",
     "488.9561f9b8.chunk.js.map": "/static/js/488.9561f9b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47a6817a.css",
+    "static/css/main.40d5e174.css",
     "static/js/main.fea955a1.js"
   ]
 }
