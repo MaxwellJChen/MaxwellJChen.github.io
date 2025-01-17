@@ -45,7 +45,7 @@ function Experience() {
 
                     <div id='vds' className='work glass'>
                         <div className='experience-label hor'>
-                            <img src={vds} alt={'Vanderbilt Data Science Club Logo'} />
+                            <img src={vds} alt={'Vanderbilt Data Science Club Logo'} style={{'borderRadius': '5px'}} />
                             Nov 2023 - May 2024
                         </div>
 
@@ -66,7 +66,7 @@ function Experience() {
                     <div id='nexgen' className='work glass'>
                         <div className='experience-label hor'>
                             <img src={nexgen} alt={'NexGen Coding Logo'} />
-                            Jan 2022 — Oct 2022
+                            Jan 2022 - Oct 2022
                         </div>
 
                         <div className='experience-title glass panel hor'>
